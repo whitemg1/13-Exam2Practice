@@ -3,8 +3,8 @@ PRACTICE Exam 2, practice_problem 2.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Matthew White.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # Students:
@@ -44,7 +44,7 @@ def main():
 def run_test_practice_problem2a():
     """ Tests the   practice_problem2a  function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  practice_problem2a  function defined below.
     #   Include at least **   4    ** tests that, taken together,
     #   would form a    ** REASONABLY GOOD test set **
@@ -58,6 +58,51 @@ def run_test_practice_problem2a():
     print('--------------------------------------------------')
     print('Testing the   practice_problem2a   function:')
     print('--------------------------------------------------')
+
+    # Test 1
+    print('Test 1')
+    print('')
+    sequence = [1, 2, 3, 4, 5]
+    delta = 1
+    expected = [2, 3, 4, 5, 6]
+    actual = practice_problem2a(sequence, delta)
+    print('Expected: ', expected)
+    print('Actual: ', actual)
+    print('')
+
+    # Test 2
+    print('Test 2')
+    print('')
+    sequence = [4, 12, 7, 1]
+    delta = 5
+    expected = [9, 17, 12, 6]
+    actual = practice_problem2a(sequence, delta)
+    print('Expected: ', expected)
+    print('Actual: ', actual)
+    print('')
+
+    # Test 3
+    print('Test 3')
+    print('')
+    sequence = [0, 0, 0]
+    delta = 0
+    expected = [0, 0, 0]
+    actual = practice_problem2a(sequence, delta)
+    print('Expected: ', expected)
+    print('Actual: ', actual)
+    print('')
+
+    # Test 4
+    print('Test 4')
+    print('')
+    sequence = [0, 0, 0]
+    delta = 0
+    expected = [0, 0, 0]
+    actual = practice_problem2a(sequence, delta)
+    print('Expected: ', expected)
+    print('Actual: ', actual)
+    print('')
+
 
 
 def practice_problem2a(sequence, delta):
